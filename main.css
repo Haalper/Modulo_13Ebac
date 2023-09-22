@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(211, 0, 0);
+    padding: 16px;
+}
+
+li {
+    list-style: none;
+}
+
+nav li a, h1 {
+    color: aliceblue;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 16px;
+}
+
+h2 {
+    text-align: center;
+    padding: 10px;
+}
+
+.Produto img {
+    height: 250px;
+    width: 250px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+h3 {
+    font-size: 18px;
+    margin: 6px 0;
+    cursor: pointer;
+}
+
+.Produto li p {
+    width: 50%;
+    margin-left: 40px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button {
+    display: block;
+    padding: 7px;
+    background-color: rgb(0, 0, 250);
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 120%;
+}
+
+.Produto-container button {
+    margin-left: 40px;
+}
+
+.Produto li {
+    width: calc(33.33% - 20px);
+    margin-right: 20px;
+    float: left;
+}
+
+.cards {
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.col-4 {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    max-width: 20%;
+}
+
+.card-design {
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+    nav ul li {
+        display: block;
+        margin-right: 16px;
+    }
+
+    .Produto li {
+        width: calc(40.00% - 20px);
+        margin-right: 20px;
+        float: left;
+    }
+
+    .Produto {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+        justify-content: space-between;
+        align-content: space-between;
+    }
+
+    .Produto img {
+        height: 250px;
+        width: 250px;
+        cursor: pointer;
+        margin: 10px;
+    }
+
+    .Produto li p {
+        width: 75%;
+    }
+
+    h2 {
+        text-align: center;
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    .Produto h3 {
+        width: 120%;
+    }
+
+    .Produto-container button {
+        margin-left: 40px;
+    }
+
+    .cards {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .col-4 {
+        max-width: 30%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    nav ul li {
+        display: block;
+        margin: 8px 0;
+    }
+
+    .Produto img {
+        height: 140px;
+        width: 140px;
+        cursor: pointer;
+    }
+
+    .Produto {
+        display: flex;
+        list-style: none;
+        align-items: center;
+        justify-content: center;
+        max-width: 64%;
+        margin: auto;
+    }
+
+    .Produto-container h2 {
+        text-align: left;
+        padding-left: 18%;
+        margin-bottom: 20px;
+    }
+
+    .Produto {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Produto li {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .Produto img {
+        height: 250px;
+        width: 250px;
+        cursor: pointer;
+    }
+
+    .Produto li p {
+        width: 70%;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    h2 {
+        text-align: center;
+        padding: 10px;
+    }
+
+    button {
+        padding: 5px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 8px;
+    }
+
+    .Produto-container button {
+        margin-left: 40px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-4 {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+}
+
